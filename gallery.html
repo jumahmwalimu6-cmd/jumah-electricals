@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Juma Electricals project gallery – solar installations, industrial panels, house wiring, generators and more." />
+  <title>Gallery | Juma Electricals & Engineering Firm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Lightbox */
+    .lightbox-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.93); z-index: 9999;
+      align-items: center; justify-content: center;
+    }
+    .lightbox-overlay.open { display: flex; }
+    .lightbox-inner { position: relative; max-width: 90vw; }
+    .lightbox-inner img { max-width: 90vw; max-height: 85vh; border-radius: 8px; object-fit: contain; }
+    .lightbox-close { position: absolute; top: -40px; right: 0; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; }
+    .lightbox-caption { text-align: center; color: #fff; font-size: 0.9rem; margin-top: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Juma Electricals – Home">
+        <img src="images/logo.png" alt="Juma Electricals & Engineering Firm Logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+             style="height:58px;width:auto;" />
+        <div class="logo-text" style="display:none;">
+          <span>Juma Electricals</span>
+          <span>&amp; Engineering Firm</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li><a href="index.html"    role="menuitem">Home</a></li>
+        <li><a href="about.html"    role="menuitem">About</a></li>
+        <li><a href="services.html" role="menuitem">Services</a></li>
+        <li><a href="gallery.html"  class="active" role="menuitem">Gallery</a></li>
+        <li><a href="contact.html"  role="menuitem">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav-cta" role="menuitem">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== SECTION 1: BANNER ===== -->
+    <section class="page-banner" aria-label="Gallery page banner">
+      <div class="hero-bg" style="background-image:url('https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+      <div class="hero-overlay"></div>
+      <div class="banner-content">
+        <h1>Project Gallery</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: ELECTRICAL INSTALLATIONS ===== -->
+    <section class="section-pad bg-light" id="installations">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Electrical Installations</h2>
+          <div class="divider"></div>
+          <p class="section-sub">Distribution boards, wiring systems, switchgear and power installations</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall fade-in" data-caption="Main Distribution Board — 5-Star Hotel, Nairobi" tabindex="0">
+            <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Main distribution board installation in hotel" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Main Distribution Board — Hotel, Nairobi</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Residential Consumer Unit Upgrade, Karen" tabindex="0">
+            <img src="https://images.pexels.com/photos/8005374/pexels-photo-8005374.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Residential consumer unit upgrade" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Consumer Unit Upgrade — Karen, Nairobi</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Industrial Motor Control Centre, Athi River" tabindex="0">
+            <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Industrial motor control centre" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Motor Control Centre — Factory, Athi River</div>
+          </div>
+          <div class="gallery-item wide fade-in" data-caption="Commercial Office Electrical Fit-Out, Westlands" tabindex="0">
+            <img src="https://images.pexels.com/photos/3637836/pexels-photo-3637836.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="Commercial office electrical installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Office Electrical Fit-Out — Westlands</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Underground Cable Installation, Industrial Area" tabindex="0">
+            <img src="https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Underground cable laying project" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Underground Cabling — Industrial Area</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: SOLAR PROJECTS ===== -->
+    <section class="section-pad bg-white" id="solar">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Solar Energy Projects</h2>
+          <div class="divider"></div>
+          <p class="section-sub">Residential, commercial and industrial solar PV systems we have designed and installed</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item wide fade-in" data-caption="200kW Commercial Solar Array — Mombasa Industrial" tabindex="0">
+            <img src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="Large commercial solar panel installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">200kW Solar Array — Mombasa Industrial</div>
+          </div>
+          <div class="gallery-item tall fade-in" data-caption="Residential 5kW Solar System — Lavington" tabindex="0">
+            <img src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Residential rooftop solar installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">5kW Residential Solar — Lavington</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Solar Battery Storage System — School, Kitui" tabindex="0">
+            <img src="https://images.pexels.com/photos/9875509/pexels-photo-9875509.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Solar battery storage installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Battery Storage System — School, Kitui</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Solar Inverter Room — Hospital, Nakuru" tabindex="0">
+            <img src="https://images.pexels.com/photos/9875521/pexels-photo-9875521.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Solar inverter and charge controller room" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Inverter Room — Hospital, Nakuru</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: INDUSTRIAL PROJECTS ===== -->
+    <section class="section-pad bg-light" id="industrial">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Industrial &amp; Commercial Projects</h2>
+          <div class="divider"></div>
+          <p class="section-sub">High-voltage, factory and large-scale commercial electrical works</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in" data-caption="Transformer Installation — Cement Factory, Athi River" tabindex="0">
+            <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Power transformer installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Transformer Install — Cement Factory</div>
+          </div>
+          <div class="gallery-item tall fade-in" data-caption="HV Switchgear Room — Water Treatment Plant" tabindex="0">
+            <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="High voltage switchgear installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">HV Switchgear — Water Treatment Plant</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Generator ATS Panel — Private Hospital" tabindex="0">
+            <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Automatic transfer switch panel" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">ATS Panel — Private Hospital</div>
+          </div>
+          <div class="gallery-item wide fade-in" data-caption="Full Industrial Electrical Fit-Out — Food Processing Plant" tabindex="0">
+            <img src="https://images.pexels.com/photos/210881/pexels-photo-210881.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="Industrial electrical fit-out in food processing plant" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Full Fit-Out — Food Processing Plant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: GENERATOR PROJECTS ===== -->
+    <section class="section-pad bg-white" id="generators">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Generator Installations</h2>
+          <div class="divider"></div>
+          <p class="section-sub">Standby and prime power generator projects across all sectors</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in" data-caption="500kVA Diesel Generator — Hospital, Kisumu" tabindex="0">
+            <img src="https://images.pexels.com/photos/3846205/pexels-photo-3846205.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Large diesel generator installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">500kVA Generator — Hospital, Kisumu</div>
+          </div>
+          <div class="gallery-item wide fade-in" data-caption="Dual Generator Changeover System — Data Centre" tabindex="0">
+            <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="Dual generator automatic changeover system" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Dual Generator Changeover — Data Centre</div>
+          </div>
+          <div class="gallery-item tall fade-in" data-caption="25kVA Residential Generator with ATS — Runda" tabindex="0">
+            <img src="https://images.pexels.com/photos/3637836/pexels-photo-3637836.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Residential standby generator installation" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">25kVA Residential Generator — Runda</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Generator Maintenance Service — Shopping Mall" tabindex="0">
+            <img src="https://images.pexels.com/photos/8005374/pexels-photo-8005374.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Generator maintenance being performed" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Generator Maintenance — Shopping Mall</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 6: LIGHTING PROJECTS ===== -->
+    <section class="section-pad bg-light" id="lighting">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Lighting Projects</h2>
+          <div class="divider"></div>
+          <p class="section-sub">Interior, exterior, street and architectural lighting installations</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item wide fade-in" data-caption="LED Street Lighting — Thika Road Upgrade" tabindex="0">
+            <img src="https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="LED street lighting installation along highway" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">LED Street Lighting — Thika Road</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Architectural Facade Lighting — Office Tower" tabindex="0">
+            <img src="https://images.pexels.com/photos/2177932/pexels-photo-2177932.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Architectural building facade lighting" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Facade Lighting — Office Tower</div>
+          </div>
+          <div class="gallery-item tall fade-in" data-caption="Warehouse LED Flood Lighting — Logistics Company" tabindex="0">
+            <img src="https://images.pexels.com/photos/236698/pexels-photo-236698.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="LED flood lighting in large warehouse" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Warehouse LED Lighting — Logistics Hub</div>
+          </div>
+          <div class="gallery-item fade-in" data-caption="Smart Office Lighting Control System" tabindex="0">
+            <img src="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 alt="Smart automated office lighting system" loading="lazy" />
+            <div class="gallery-overlay"><span>🔍</span></div>
+            <div class="gallery-caption">Smart Lighting Control — Office Complex</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 7: TEAM AT WORK ===== -->
+    <section class="section-pad bg-white">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Our Team in Action</h2>
+          <div class="divider"></div>
+          <p class="section-sub">Skilled professionals delivering quality work on every site</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card fade-in">
+            <div class="card-img">
+              <img src="https://images.pexels.com/photos/8005374/pexels-photo-8005374.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Electrician installing wiring in a house" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Residential Rewiring Team</h3>
+              <p>Our residential team works efficiently and cleanly, minimising disruption to homeowners while delivering flawless installations.</p>
+            </div>
+          </article>
+          <article class="card fade-in">
+            <div class="card-img">
+              <img src="https://images.pexels.com/photos/3637836/pexels-photo-3637836.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Engineers in hard hats working on electrical panels" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Industrial Engineering Team</h3>
+              <p>Fully safety-equipped industrial engineers handling complex high-voltage works with precision and professionalism.</p>
+            </div>
+          </article>
+          <article class="card fade-in">
+            <div class="card-img">
+              <img src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=800"
+                   alt="Technician installing solar panels on rooftop" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3>Solar Installation Specialists</h3>
+              <p>Our solar team combines engineering expertise with safety training to deliver efficient, code-compliant solar PV systems.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 8: CTA ===== -->
+    <section class="cta-banner" aria-label="Gallery call to action">
+      <h2>Impressed by Our Work?</h2>
+      <p>Let's discuss your next electrical project. Our certified engineers are ready to bring your vision to life — safely and on budget.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <span>Juma Electricals</span>
+          <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);">&amp; Engineering Firm</span>
+        </div>
+        <p>Delivering safe, reliable electrical engineering solutions since 2010.</p>
+        <div class="social-row" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Project Types</h4>
+        <ul>
+          <li><a href="#installations">Electrical Installs</a></li>
+          <li><a href="#solar">Solar Projects</a></li>
+          <li><a href="#industrial">Industrial Works</a></li>
+          <li><a href="#generators">Generators</a></li>
+          <li><a href="#lighting">Lighting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.84rem;margin-bottom:1rem;">Electrical tips and project updates.</p>
+        <div class="footer-newsletter">
+          <label for="nl-gallery" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email</label>
+          <input type="email" id="nl-gallery" placeholder="Your email address" />
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Juma Electricals &amp; Engineering Firm. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+  <script>
+    const lightbox  = document.getElementById('lightbox');
+    const lbImg     = document.getElementById('lightboxImg');
+    const lbCaption = document.getElementById('lightboxCaption');
+    const lbClose   = document.getElementById('lightboxClose');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => open(item));
+      item.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') open(item); });
+    });
+    function open(item){
+      const img = item.querySelector('img');
+      lbImg.src = img.src; lbImg.alt = img.alt;
+      lbCaption.textContent = item.dataset.caption || img.alt;
+      lightbox.classList.add('open'); document.body.style.overflow='hidden'; lbClose.focus();
+    }
+    function close(){ lightbox.classList.remove('open'); document.body.style.overflow=''; }
+    lbClose.addEventListener('click', close);
+    lightbox.addEventListener('click', e => { if(e.target===lightbox) close(); });
+    document.addEventListener('keydown', e => { if(e.key==='Escape') close(); });
+  </script>
+</body>
+</html>

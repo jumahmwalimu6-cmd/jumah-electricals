@@ -1,0 +1,20 @@
+<!--
+  LOGO PLACEHOLDER for Juma Electricals & Engineering Firm
+  =========================================================
+  To replace this logo:
+  1. Place your real logo image in this /images/ folder
+  2. Name it: logo.png  (or logo.svg / logo.jpg)
+  3. All 5 HTML pages reference:  <img src="images/logo.png" ...>
+  4. Recommended height: up to 70px  |  Width: flexible
+  The text fallback (Juma Electricals / & Engineering Firm) shows
+  automatically if the image file is missing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="58" viewBox="0 0 200 58">
+  <rect width="200" height="58" rx="6" fill="#1A2B4A"/>
+  <!-- Lightning bolt icon -->
+  <polygon points="28,8 18,32 26,32 22,50 38,24 28,24 34,8" fill="#F5A623"/>
+  <!-- Company name -->
+  <text x="48" y="26" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">JUMA</text>
+  <text x="48" y="40" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#F5A623" letter-spacing="0.3">ELECTRICALS</text>
+  <text x="48" y="52" font-family="Arial,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.6)" letter-spacing="1">&amp; ENGINEERING FIRM</text>
+</svg>
